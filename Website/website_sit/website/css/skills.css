@@ -1,0 +1,40 @@
+.skill-section {
+  width: auto;
+  height: auto;
+  padding: 20px;
+}
+
+.skill-section-head h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.skill-par2 {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #e6e6e6;
+  font-weight: bold;
+}
+
+.table tr:hover {
+  background-color: #f9f9f9;
+}
