@@ -1,0 +1,219 @@
+/*
+    login.css
+
+    Purpose:
+    This stylesheet defines the layout and visual styling for the login page
+    of the secure website.
+
+    The design includes:
+    - A full-screen background image
+    - A semi-transparent overlay to improve text readability
+    - A centered login form
+    - Styled input fields and submit button
+    - A welcome header displayed above the login form
+
+    The layout ensures a clean, user-friendly authentication interface.
+*/
+
+/*
+   Background styling for the login page.
+   The background image fills the entire screen and remains centered.
+*/
+body {
+  background-image: url("../images/login_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 100vh;
+  margin: 0;
+
+  /* Prevent scrollbars on the login screen */
+  overflow: hidden;
+}
+
+/*
+   Wrapper that centers the login form vertically and horizontally.
+*/
+.page-wrapper {
+  position: relative;
+  z-index: 2;
+
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+
+  /* Slight vertical spacing between header and form */
+  padding-top: 60px;
+}
+
+/*
+   Semi-transparent overlay placed over the background image.
+   Improves readability of the login form and text.
+*/
+.overlay {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  z-index: 1;
+}
+
+/*
+   Container for the login form.
+*/
+.container {
+  width: 420px;
+}
+
+/*
+   Styling of the login form box.
+   The semi-transparent background allows the background image
+   to remain slightly visible.
+*/
+form {
+  width: 360px;
+
+  background-color: rgba(255, 255, 255, 0.7);
+
+  padding: 20px;
+
+  border-radius: 10px;
+}
+
+/*
+   Label styling for username and password fields.
+*/
+form label {
+  display: block;
+
+  font-family: sans-serif;
+  font-size: 16px;
+
+  color: #303030;
+
+  margin-top: 12px;
+  margin-bottom: 6px;
+
+  text-align: left;
+}
+
+/*
+   Styling for text and password input fields.
+*/
+input[type="text"],
+input[type="password"] {
+
+  width: 100%;
+
+  padding: 10px;
+
+  margin: 0 0 8px 0;
+
+  border: none;
+
+  border-radius: 5px;
+
+  box-sizing: border-box;
+
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+
+  color: #555;
+
+  background-color: #ffffff;
+}
+
+/*
+   Highlight input fields when focused.
+*/
+input[type="text"]:focus,
+input[type="password"]:focus {
+
+  outline: none;
+
+  /* Soft glow effect */
+  box-shadow: 0 0 5px #de8a20;
+}
+
+/*
+   Styling for the login button.
+*/
+input[type="submit"] {
+
+  background-color: #de8a20;
+
+  color: #fff;
+
+  padding: 10px;
+
+  border: none;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  width: 100%;
+
+  transition: background-color 0.3s ease;
+
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+
+  font-weight: bold;
+
+  text-transform: uppercase;
+
+  margin-top: 10px;
+}
+
+/*
+   Button hover effect.
+*/
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/*
+   Button pressed effect.
+*/
+input[type="submit"]:active {
+  background-color: #357d3b;
+}
+
+/*
+   Welcome header displayed above the login form.
+*/
+.welcome-header {
+
+  color: #111;
+
+  font-size: 30px;
+
+  margin-bottom: 20px;
+
+  text-align: center;
+
+  font-weight: 700;
+
+  /*
+     Disable text selection to reduce copying
+     of page content.
+  */
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}

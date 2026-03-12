@@ -1,0 +1,79 @@
+/*
+    courses.css
+
+    Purpose:
+    This stylesheet controls the visual presentation of the Courses page.
+    It styles the page section, heading, descriptive text, and especially
+    the course table displayed to authenticated users.
+
+    The design aims to keep course information clear, structured, and easy
+    to read.
+*/
+
+/*
+   Main section container for the course content.
+   Provides spacing around the displayed information.
+*/
+.skill-section {
+  width: auto;
+  height: auto;
+  padding: 20px;
+}
+
+/*
+   Styling for the section heading.
+   The bottom border visually separates the title from the table content.
+*/
+.skill-section-head h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+/*
+   Optional paragraph styling for descriptive text inside the section.
+*/
+.skill-par2 {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/*
+   Main table styling for course information.
+   Ensures the table uses full width and has a clean layout.
+*/
+.table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/*
+   Cell styling for table headers and data cells.
+   Adds borders, spacing, and left alignment for readability.
+*/
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/*
+   Header row styling.
+   Makes column titles visually distinct from table data.
+*/
+.table th {
+  background-color: #e6e6e6;
+  font-weight: bold;
+}
+
+/*
+   Hover effect for table rows.
+   Improves user experience by highlighting the row being viewed.
+*/
+.table tr:hover {
+  background-color: #f9f9f9;
+}

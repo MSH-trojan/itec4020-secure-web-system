@@ -1,0 +1,96 @@
+/*
+    aboutme.css
+
+    Purpose:
+    This stylesheet defines the layout and styling of the "About Me"
+    page displayed after a successful login.
+
+    The page presents profile information including:
+    - A profile image
+    - Name and title
+    - Descriptive text about the user
+
+    The design centers the content and ensures that profile information
+    is displayed in a clean and readable format.
+*/
+
+/*
+   Information box used to display profile description text.
+   Provides a light background and border to visually separate
+   the content from the rest of the page.
+*/
+.aboutmeinfo {
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+
+  padding: 10px;
+  margin: 10px 0;
+
+  font-size: 16px;
+  line-height: 1.6;
+
+  color: #333;
+
+  /* Center the descriptive text */
+  text-align: center;
+}
+
+/*
+   Main container for the profile section.
+   Uses flexbox to vertically align profile elements.
+*/
+.profile-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Limit the width of the content area */
+  max-width: 700px;
+
+  /* Center the profile box horizontally */
+  margin: 60px auto;
+}
+
+/*
+   Styling for the profile image.
+   The circular shape is achieved using border-radius.
+*/
+.profile-box img {
+
+  width: 200px;
+  height: 200px;
+
+  /* Ensures the image fills the circle without distortion */
+  object-fit: cover;
+
+  /* Creates a circular profile picture */
+  border-radius: 50%;
+
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/*
+   Main profile name styling.
+*/
+.profile-box h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+/*
+   Secondary profile heading (e.g., title or role).
+*/
+.profile-box h2 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+
+/*
+   Paragraph styling for profile description text.
+*/
+.profile-box p {
+  font-size: 16px;
+  margin: 0;
+}

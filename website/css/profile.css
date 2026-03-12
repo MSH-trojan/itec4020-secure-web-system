@@ -1,0 +1,169 @@
+/*
+    profile.css
+
+    Purpose:
+    This stylesheet defines the main layout and visual structure
+    of the authenticated pages in the website (such as About Me
+    and Courses pages).
+
+    It implements a structured interface consisting of:
+    - A fixed top title bar
+    - A left navigation sidebar
+    - A logout section
+    - A main scrollable content area
+
+    The layout ensures that navigation remains accessible while
+    the user interacts with page content.
+*/
+
+/*
+   Reset margin and padding for the page body and enable
+   smooth visual transitions when layout changes occur.
+*/
+body {
+  margin: 0;
+  padding: 0;
+  transition-duration: 300ms;
+}
+
+/*
+   Title bar displayed at the top of the page.
+   It remains fixed so that the page title and user greeting
+   are always visible.
+*/
+.titlebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: #de8a20;
+  color: #fff;
+  font-size: 20px;
+  line-height: 50px;
+  overflow: hidden;
+}
+
+/*
+   Page title displayed on the left side of the title bar.
+*/
+.pagetitle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  color: #fff;
+  font-size: 24px;
+  line-height: 50px;
+  padding-left: 20px;
+}
+
+/*
+   Welcome message displayed on the right side of the title bar.
+   Typically shows the logged-in username.
+*/
+.welcome {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 50px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 50px;
+  padding-right: 20px;
+}
+
+/*
+   Navigation sidebar located on the left side of the page.
+   It remains fixed so the user can easily navigate between
+   protected sections of the site.
+*/
+.nav {
+  position: fixed;
+  left: 0;
+  top: 50px;
+  height: calc(100% - 50px);
+  width: 200px;
+  background-color: #f8f8f8;
+  border-right: 1px solid #e7e7e7;
+}
+
+/*
+   Styling for navigation links.
+*/
+.nav a {
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+/*
+   Hover effect for navigation links to improve usability
+   and provide visual feedback.
+*/
+.nav a:hover {
+  background-color: #b4d7e7;
+}
+
+/*
+   Logout section positioned at the bottom of the navigation bar.
+*/
+.logout {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 200px;
+}
+
+/*
+   Logout button styling.
+   The red color visually distinguishes it as a critical action.
+*/
+.logout a {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #ca4848;
+  text-align: center;
+}
+
+/*
+   Hover effect for logout button.
+*/
+.logout a:hover {
+  background-color: #ff1f1f;
+}
+
+/*
+   Main content area where page information is displayed.
+   This area is scrollable while the navigation and title bar
+   remain fixed.
+*/
+.content {
+  position: fixed;
+  right: 0;
+  top: 50px;
+  height: calc(100% - 50px);
+  width: calc(100% - 200px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/*
+   Container box used to display page content such as
+   user information or course tables.
+*/
+.contentbox {
+  margin: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0000004d;
+  padding: 20px;
+}

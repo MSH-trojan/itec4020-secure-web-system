@@ -1,0 +1,34 @@
+/*
+    useDefaultCursor.css
+
+    Purpose:
+    This stylesheet forces the default cursor to appear for most elements
+    on the webpage. It prevents custom cursors from being used and helps
+    maintain consistent behavior across the site.
+
+    Security / usability reason:
+    Some websites use custom cursors to hide interactions such as text
+    selection or dragging. This file ensures a predictable cursor behavior
+    while still allowing interactive elements (links, buttons, inputs)
+    to display the pointer cursor.
+
+    This improves usability while still supporting the site's
+    content protection measures.
+*/
+
+/* 
+   Apply the default cursor to all elements on the page.
+   The !important rule ensures that other styles cannot override it.
+*/
+* {
+  cursor: default !important;
+}
+
+/*
+   Allow clickable interface elements to display the pointer cursor.
+   This helps users recognize interactive components like links,
+   buttons, and form inputs.
+*/
+a, button, input, textarea {
+  cursor: pointer !important;
+}

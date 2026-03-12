@@ -1,0 +1,102 @@
+/*
+    reset.css
+
+    Purpose:
+    This stylesheet resets the default styling applied by different web browsers.
+    Browsers apply their own default margins, paddings, font sizes, and layout
+    behavior to HTML elements. These defaults vary across browsers and can cause
+    inconsistent page layouts.
+
+    By resetting these properties, the website starts from a clean and predictable
+    baseline. This allows the developer to apply custom styles consistently
+    across all browsers.
+
+    This reset stylesheet is based on common CSS reset techniques used in
+    modern web development.
+*/
+
+/* 
+   Reset margins, padding, borders, and font settings
+   for most HTML elements to ensure consistent rendering.
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+	/* Reset font behavior */
+	font-size: 100%;
+	font: inherit;
+
+	/* Align elements consistently */
+	vertical-align: baseline;
+}
+
+/*
+   HTML5 display-role reset for older browsers.
+
+   Some older browsers do not automatically recognize newer HTML5
+   semantic elements (such as article, section, or nav). This rule
+   ensures they behave as block elements.
+*/
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/*
+   Base styling for the body element.
+   Sets the default line spacing, font family, and background color.
+*/
+body {
+	line-height: 1;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #f5f6f8;
+}
+
+/*
+   Remove default list styling (bullets and numbering).
+   Custom list styles can then be applied if needed.
+*/
+ol, ul {
+	list-style: none;
+}
+
+/*
+   Remove default quotation marks applied by browsers
+   for blockquote and q elements.
+*/
+blockquote, q {
+	quotes: none;
+}
+
+/*
+   Prevent pseudo-elements from automatically adding quotation marks.
+*/
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/*
+   Normalize table layout behavior by removing spacing
+   between table cells.
+*/
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}

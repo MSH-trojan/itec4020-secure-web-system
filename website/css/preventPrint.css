@@ -1,0 +1,32 @@
+/*
+    preventPrint.css
+
+    Purpose:
+    This stylesheet disables printing of protected web pages.
+
+    When a user attempts to print the page (using the browser print
+    function such as Ctrl+P), the page content will be hidden so that
+    nothing is displayed in the printed output.
+
+    This is part of the website's content protection mechanisms,
+    helping prevent users from easily copying or distributing
+    protected information through printed documents.
+*/
+
+/*
+   The @media print rule applies only when the page
+   is being printed or when the browser's print preview
+   is activated.
+*/
+@media print {
+
+  /*
+     Hide the entire page content during printing.
+     The !important rule ensures that this style overrides
+     other CSS rules.
+  */
+  body {
+    display: none !important;
+  }
+
+}

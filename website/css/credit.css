@@ -1,0 +1,47 @@
+/*
+    credit.css
+
+    Purpose:
+    This style defines the appearance and position of the credit/security
+    message displayed at the bottom of the page.
+
+    The credit message is used to inform users about the security measures
+    implemented in the system, such as disabling copying and printing of
+    protected content.
+
+    The message is fixed at the bottom of the page so it remains visible
+    regardless of page scrolling.
+*/
+
+.credit {
+
+    /* Keep the message fixed at the bottom of the screen */
+    position: fixed;
+
+    bottom: 0;
+
+    /* Horizontally position the message near the center */
+    left: 50%;
+
+    /* Dark background for better visibility */
+    background-color: #333;
+
+    /* Adjust horizontal alignment */
+    transform: translateX(-40%);
+
+    /* Text color */
+    color: #fff;
+
+    /* Padding around the message */
+    padding: 10px;
+
+    /* Font styling */
+    font-family: sans-serif;
+    font-size: 12px;
+
+    /* Slight transparency so it is visible but unobtrusive */
+    opacity: 0.8;
+
+    /* Rounded corner for a smoother visual design */
+    border-radius: 5px 0 0 0;
+}
