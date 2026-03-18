@@ -96,7 +96,7 @@ Command:
 
 ssh itec4020grp4@sit.itec.yorku.ca
 
-with password: Dysheiff
+with password
 
 Example session:
 
